@@ -1,4 +1,5 @@
 class JobsController < ApplicationController
+  before_action :authenticate_user! , only: [:new]
 
    def index
      @jobs = Job.all
@@ -32,7 +33,7 @@ class JobsController < ApplicationController
         redirect_to jobs_path, notice: "Update Success!"
      else
        render :edit
-     end 
+     end
    end
 
    def destroy
