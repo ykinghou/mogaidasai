@@ -1,5 +1,7 @@
 class Admin::JobsController < ApplicationController
-   before_action :authenticate_user!
+   before_action :authenticate_user!, only: [:new, :create, :update, :edit, :destroy, :index]
+   before_action :require_is_admin
+   before_action :find_job_and_check_permission , only: [:edit, :update, :destroy]
 
    def index
      @jobs = current_user.participated_jobs
@@ -11,7 +13,7 @@ class Admin::JobsController < ApplicationController
     end
 
     def edit
-
+      @job = Job.find(params[:id])
     end
 
     def new
@@ -23,7 +25,8 @@ class Admin::JobsController < ApplicationController
       @job = Job.new(job_params)
       @job.user = current_user
       if @job.save
-        redirect_to jobs_path
+        current_user.join!(@job)
+        redirect_to admin_jobs_path
       else
         render :new
       end
@@ -32,7 +35,7 @@ class Admin::JobsController < ApplicationController
     def update
 
       if @job.update(job_params)
-         redirect_to jobs_path, notice: "Update Success!"
+         redirect_to admin_jobs_path, notice: "Update Success!"
       else
         render :edit
       end
@@ -42,16 +45,27 @@ class Admin::JobsController < ApplicationController
 
       @job.destroy
       flash[:alert] = "Job deleted!"
-      redirect_to jobs_path
+      redirect_to admin_jobs_path
+    end
+
+    def beadmin
+      @users = User.all
     end
 
    private
 
+   def require_is_admin
+     if !current_user.admin?
+       flash[:alert] = 'You are not admin!'
+       redirect_to root_path
+     end
+   end
+
    def find_job_and_check_permission
-    @job = Job.find(params[:id])
-    if current_user != @job.user
-      redirect_to root_path, alert: "You have no permission!"
-    end
+      @job = Job.find(params[:id])
+      if current_user != @job.user
+        redirect_to root_path, alert: "You have no permission!"
+      end
    end
 
    def job_params
