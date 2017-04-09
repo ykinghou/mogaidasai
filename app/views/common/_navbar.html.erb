@@ -18,7 +18,8 @@
              <ul class="dropdown-menu">
                <li>
                  <% if current_user.email == "admin@job-listing.com" %>
-                   <%= link_to("Admin Controller", beadmin_admin_jobs_path) %>
+                   <%= link_to("Admin Controller", accounts_path) %>
+                  
                  <% else %>
                    <%= link_to("Admin Panel", admin_jobs_path) %>
                  <% end %>

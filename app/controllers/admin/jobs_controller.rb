@@ -48,9 +48,7 @@ class Admin::JobsController < ApplicationController
       redirect_to admin_jobs_path
     end
 
-    def beadmin
-      @users = User.all
-    end
+    
 
    private
 

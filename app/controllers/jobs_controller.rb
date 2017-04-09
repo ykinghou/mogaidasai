@@ -4,6 +4,7 @@ class JobsController < ApplicationController
 
    def index
      @jobs = Job.all
+     flash[:notice] = "创建admin@job-listing.com超级admin,进入“Admin Controller”对账户权限进行管理！"
    end
 
    def show
