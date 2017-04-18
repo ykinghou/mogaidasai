@@ -12,13 +12,6 @@
 
 ActiveRecord::Schema.define(version: 20170408151402) do
 
-  create_table "accounts", force: :cascade do |t|
-    t.integer  "limit"
-    t.integer  "user_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "job_relationships", force: :cascade do |t|
     t.integer  "job_id"
     t.integer  "user_id"
@@ -29,8 +22,13 @@ ActiveRecord::Schema.define(version: 20170408151402) do
   create_table "jobs", force: :cascade do |t|
     t.string   "title"
     t.text     "description"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.integer  "wage_upper_bound"
+    t.integer  "wage_lower_bound"
+    t.text     "contact_email"
+    t.boolean  "is_hidden",        default: true
+    t.boolean  "boolean",          default: true
+    t.datetime "created_at",                      null: false
+    t.datetime "updated_at",                      null: false
     t.integer  "user_id"
   end
 

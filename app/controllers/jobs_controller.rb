@@ -3,7 +3,7 @@ class JobsController < ApplicationController
   before_action :find_job_and_check_permission , only: [:edit, :update, :destroy]
 
    def index
-     @jobs = Job.all
+     @jobs = Job.where(:is_hidden => false).order("created_at DESC")
      flash[:notice] = "创建admin@job-listing.com超级admin,进入“Admin Controller”对账户权限进行管理！"
    end
 
@@ -58,7 +58,7 @@ def find_job_and_check_permission
 end
 
 def job_params
-  params.require(:job).permit(:title, :description)
+  params.require(:job).permit(:title, :description, :wage_upper_bound, :wage_lower_bound, :contact_email, :is_hidden)
 end
 
 end

@@ -14,8 +14,15 @@ class User < ApplicationRecord
   end
 
   def join!(job)
-    participated_jobs << job
+     participated_jobs << job
   end
-  
+
+  def beadmin
+     is_admin = true
+  end
+
+  def noadmin
+     is_admin = false
+  end
 
 end

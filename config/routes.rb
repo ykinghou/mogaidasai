@@ -1,12 +1,15 @@
 Rails.application.routes.draw do
 
-  devise_for :users
+
+
+
+  devise_for :users, :controllers => { registrations: 'registrations' }
   resources :jobs
-  resources :accounts
-  root "jobs#index"
+
 
   namespace :admin do
     resources :jobs
   end
 
+  root "jobs#index"
 end
