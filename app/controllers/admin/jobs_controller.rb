@@ -4,7 +4,7 @@ class Admin::JobsController < ApplicationController
    before_action :find_job_and_check_permission , only: [:edit, :update, :destroy]
 
    def index
-     @jobs = current_user.participated_jobs
+     @jobs = current_user.participated_jobs.order("created_at DESC")
    end
 
 
@@ -48,7 +48,7 @@ class Admin::JobsController < ApplicationController
       redirect_to admin_jobs_path
     end
 
-    
+
 
    private
 
@@ -67,6 +67,6 @@ class Admin::JobsController < ApplicationController
    end
 
    def job_params
-   params.require(:job).permit(:title, :description)
+     params.require(:job).permit(:title, :description, :wage_upper_bound, :wage_lower_bound, :contact_email, :is_hidden)
    end
 end

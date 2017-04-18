@@ -13,6 +13,7 @@
         <th>#</th>
         <th>Title</ht>
         <th>Description</th>
+        <th>Post Status</th>
         <th>Last Update</th>
       </tr>
     </thead>
@@ -23,14 +24,21 @@
           <td>#</td>
           <td><%= link_to(job.title, job_path(job)) %></td>
           <td><%= job.description %></td>
-
+          <td>
+              <% if job.is_hidden == true %>
+                 No State
+              <% else %>
+                 Has State
+              <% end %>
+          </td>
+          <td><%= job.updated_at %></td>
           <td>
 
                <%= link_to("Edit", edit_admin_job_path(job) , class: "btn btn-sm btn-default") %> |
                <%= link_to("Destroy", admin_job_path(job),     class: "btn btn-sm btn-default", method: :delete, data: {confirm: "Are you sure?"}) %>
 
           </td>
-          <td><%= job.updated_at %></td>
+
         </tr>
       <% end %>
     </tbody>
