@@ -87,10 +87,14 @@
 /****** LOGIN MODAL ******/
 .loginmodal-container {
   padding: 30px;
-  max-width: 350px;
+  max-width: 450px;
   width: 100% !important;
   background-color: #F7F7F7;
   margin: 0 auto;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  font-family: roboto
+
 }
 
 .loginmodal-container h1 {
@@ -104,19 +108,27 @@
   display: block;
   margin-bottom: 10px;
   position: relative;
-}
 
+  border-radius: 0px;
+  background-color: #4CAF50;
+
+}
+.loginmodal-container input[type=email] {
+  height: 30px;
+  border-radius: 0px;
+}
 .loginmodal-container input[type=text], input[type=password] {
   height: 44px;
   font-size: 16px;
   width: 100%;
-  padding: 12px 20px;
-
-  margin: 8px 0;
+  margin-bottom: 10px;
   -webkit-appearance: none;
   background: #fff;
   border: 1px solid #d9d9d9;
   border-top: 1px solid #c0c0c0;
+
+  border-radius: 0px;
+
   /* border-radius: 2px; */
   padding: 0 8px;
   box-sizing: border-box;
@@ -124,12 +136,14 @@
 }
 
 .loginmodal-container input[type=text]:hover, input[type=password]:hover {
-
   border: 1px solid #b9b9b9;
   border-top: 1px solid #a0a0a0;
   -moz-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
   -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
   box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+
+  border-radius: 0px;
+
 }
 
 .loginmodal {
@@ -139,7 +153,7 @@
   font-weight: 700;
   height: 36px;
   padding: 0 8px;
-  border-radius: 0px;
+/* border-radius: 3px; */
 /* -webkit-user-select: none;
   user-select: none; */
 }
@@ -149,73 +163,54 @@
   border: 0px;
   color: #fff;
   text-shadow: 0 1px rgba(0,0,0,0.1);
-  background-color: #4d90fe;
+  background-color: #4CAF50;
   padding: 17px 0px;
   font-family: roboto;
   font-size: 14px;
+  border-radius: 0px;
+
   /* background-image: -webkit-gradient(linear, 0 0, 0 100%,   from(#4d90fe), to(#4787ed)); */
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-/* Full-width input fields */
-input[type=text], input[type=password] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
+.loginmodal-submit:hover {
+  /* border: 1px solid #2f5bb7; */
+  border: 0px;
+  text-shadow: 0 1px rgba(0,0,0,0.3);
+  background-color: #357ae8;
+  /* background-image: -webkit-gradient(linear, 0 0, 0 100%,   from(#4d90fe), to(#357ae8)); */
 }
 
-/* Set a style for all buttons */
-button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    width: 100%;
+.loginmodal-container a {
+  text-decoration: none;
+  color: #666;
+  font-weight: 400;
+  text-align: center;
+  display: inline-block;
+  opacity: 0.6;
+  transition: opacity ease 0.5s;
 }
 
-/* Extra styles for the cancel button */
-.cancelbtn {
-    padding: 14px 20px;
-    background-color: #f44336;
+.login-help{
+  font-size: 12px;
 }
 
-/* Float cancel and signup buttons and add an equal width */
-.cancelbtn,.signupbtn {
-    float: left;
-    width: 50%;
+
+/*___________________向上按钮________________________ */
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: red; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
 }
 
-/* Add padding to container elements */
-.container {
-    padding: 16px;
-}
-
-/* Clear floats */
-.clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
-/* Change styles for cancel button and signup button on extra small screens */
-@media screen and (max-width: 300px) {
-    .cancelbtn, .signupbtn {
-        width: 100%;
-    }
+#myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
 }

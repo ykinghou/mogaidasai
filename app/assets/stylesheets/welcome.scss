@@ -23,6 +23,133 @@
 		color: #393939;
 	}
 
+	/*********************************************************************************/
+	/* Banner                                                                        */
+	/*********************************************************************************/
+
+	#banner
+	{
+		padding: 7em 0em 7em 0em;
+		position: relative;
+		text-align: center;
+		color: #fff;
+
+	}
+
+	#banner header h2
+	{
+		font-size: 4em;
+	}
+
+	#banner header .byline
+	{
+		padding-top: 1em;
+		font-size: 1.8em;
+		font-weight: 500;
+	}
+
+
+		#banner .fa
+		{
+		}
+
+			#banner .fa:before
+			{
+				padding-bottom: 0.50em;
+				font-size: 6em;
+
+				width: 1.5em;
+				height: 1.5em;
+				line-height: 1.5em;
+				border-radius: 50%;
+				border: 5px solid;
+				border-color: #ffffff;
+				color: #ffffff;
+
+			}
+
+		#banner .button
+		{
+		}
+
+			#banner .button:hover
+			{
+			}
+			/*********************************************************************************/
+			/* Extra                                                                         */
+			/*********************************************************************************/
+
+				#extra
+				{
+					padding: 4em 0em;
+					position: relative;
+					background: #f5f5f5;
+					text-align: center;
+				}
+
+				#extra header h2
+				{
+					text-transform: uppercase;
+					font-size: 1.6em;
+				}
+
+				#extra .fa
+				{
+				}
+
+					#extra .fa:before
+					{
+						margin-bottom: 1em;
+						width: 2em;
+						height: 2em;
+						line-height: 2em;
+						font-size: 3em;
+						border-radius: 50%;
+						border: 2px solid;
+						border-color: rgba(0,0,0,.8);
+						color: rgba(0,0,0,.8);
+					}
+
+				#extra .button
+				{
+					margin-top: 4em;
+				}
+
+				.u3 {
+          float: left;
+					width: 25%
+				}
+
+	/*********************************************************************************/
+	/* Header                                                                        */
+	/*********************************************************************************/
+
+		#header-wrapper
+		{
+			padding: 0em;
+			background: #333 image-url("banner.jpg") no-repeat ;
+			background-position: right top;
+			background-size: cover;
+		}
+
+		#header
+		{
+			position: relative;
+			background: #FFF;
+		}
+
+			#header .container
+			{
+				position: relative;
+				padding: 3em 0em;
+			}
+
+
+
+
+
+
+
 	h1,h2,h3,h4,h5,h6
 	{
 		font-weight: bold;
@@ -361,7 +488,7 @@
 		.fa.pull-right{margin-left:.3em}
 		.fa-spin{-webkit-animation:spin 2s infinite linear;-moz-animation:spin 2s infinite linear;-o-animation:spin 2s infinite linear;animation:spin 2s infinite linear}
 		@-moz-keyframes spin{0%{-moz-transform:rotate(0deg)} 100%{-moz-transform:rotate(359deg)}}@-webkit-keyframes spin{0%{-webkit-transform:rotate(0deg)} 100%{-webkit-transform:rotate(359deg)}}@-o-keyframes spin{0%{-o-transform:rotate(0deg)} 100%{-o-transform:rotate(359deg)}}@-ms-keyframes spin{0%{-ms-transform:rotate(0deg)} 100%{-ms-transform:rotate(359deg)}}@keyframes spin{0%{transform:rotate(0deg)} 100%{transform:rotate(359deg)}}.fa-rotate-90{filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=1);-webkit-transform:rotate(90deg);-moz-transform:rotate(90deg);-ms-transform:rotate(90deg);-o-transform:rotate(90deg);transform:rotate(90deg)}
-		.fa-cubes:before{content:"\f1b3"}
+		.fa-bolt:before{content:"\f1b3"}
 		.fa-magic:before{content:"\f0d0"}
 		.fa-wrench:before{content:"\f0ad"}
 		.fa-chain:before,.fa-link:before{content:"\f0c1"}
@@ -369,31 +496,6 @@
 		.fa-stack-1x,.fa-stack-2x{position:absolute;left:0;width:100%;text-align:center}
 		.fa-stack-1x{line-height:inherit}
 		.fa-stack-2x{font-size:2em}
-
-/*********************************************************************************/
-/* Header                                                                        */
-/*********************************************************************************/
-
-	#header-wrapper
-	{
-		padding: 0em;
-		background: #333 image-url("banner.jpg") no-repeat center;
-		background-size: cover;
-	}
-
-	#header
-	{
-		position: relative;
-		text-align: right;
-		color: #fff;
-		background: #FFF;
-	}
-
-		#header .container
-		{
-			position: relative;
-			padding: 10em 0em;
-		}
 
 /*********************************************************************************/
 /* Logo                                                                          */
@@ -419,38 +521,6 @@
 			font-weight: 600;
 		}
 
-/*********************************************************************************/
-/* Nav                                                                           */
-/*********************************************************************************/
-
-/*********************************************************************************/
-/* Banner                                                                        */
-/*********************************************************************************/
-
-	#banner
-	{
-		position: relative;
-		text-align: center;
-		color: #fff;
-	}
-
-	#banner .fa
-	{
-	}
-
-		#banner .fa:before
-		{
-			padding-bottom: 0.50em;
-			font-size: 8em;
-		}
-
-	#banner .button
-	{
-	}
-
-		#banner .button:hover
-		{
-		}
 
 /*********************************************************************************/
 /* Main                                                                          */
@@ -503,45 +573,6 @@
 
 
 /*********************************************************************************/
-/* Extra                                                                         */
-/*********************************************************************************/
-
-	#extra
-	{
-		position: relative;
-		background: #f5f5f5;
-		text-align: center;
-	}
-
-	#extra header h2
-	{
-		text-transform: uppercase;
-		font-size: 1.6em;
-	}
-
-	#extra .fa
-	{
-	}
-
-		#extra .fa:before
-		{
-			margin-bottom: 1em;
-			width: 2em;
-			height: 2em;
-			line-height: 2em;
-			font-size: 3em;
-			border-radius: 50%;
-			border: 2px solid;
-			border-color: rgba(0,0,0,.8);
-			color: rgba(0,0,0,.8);
-		}
-
-	#extra .button
-	{
-		margin-top: 4em;
-	}
-
-/*********************************************************************************/
 /* Featured                                                                      */
 /*********************************************************************************/
 
@@ -588,9 +619,6 @@
 		color: rgba(255,255,255,.4);
 	}
 
-	#copyright .container
-	{
-	}
 
 	#copyright a
 	{
