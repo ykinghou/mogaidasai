@@ -1,0 +1,599 @@
+/*
+	Imagination by TEMPLATED
+    templated.co @templatedco
+    Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+*/
+
+/*********************************************************************************/
+/* Basic                                                                         */
+/*********************************************************************************/
+
+	body
+	{
+		background: #4e5265
+		 image-url("main-wrapper-bg.jpg") repeat;
+	}
+
+	body,input,textarea,select
+	{
+		font-family: 'Raleway', sans-serif;
+		font-size: 13pt;
+		font-weight: 300;
+		line-height: 1.75em;
+		color: #393939;
+	}
+
+	h1,h2,h3,h4,h5,h6
+	{
+		font-weight: bold;
+	}
+
+		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a
+		{
+			color: inherit;
+			text-decoration: none;
+		}
+
+	/* Change this to whatever font weight/color pairing is most suitable */
+	strong, b
+	{
+		font-weight: bold;
+		color: #000000;
+	}
+
+	em, i
+	{
+		font-style: italic;
+	}
+
+	/* Don't forget to set this to something that matches the design */
+	a
+	{
+		text-decoration: none;
+		color: #ff0000;
+	}
+
+	a:hover
+	{
+		text-decoration: underline;
+	}
+
+	sub
+	{
+		position: relative;
+		top: 0.5em;
+		font-size: 0.8em;
+	}
+
+	sup
+	{
+		position: relative;
+		top: -0.5em;
+		font-size: 0.8em;
+	}
+
+	hr
+	{
+		border: 0;
+		border-top: solid 1px #ddd;
+	}
+
+	blockquote
+	{
+		border-left: solid 0.5em #ddd;
+		padding: 1em 0 1em 2em;
+		font-style: italic;
+	}
+
+	p, ul, ol, dl, table
+	{
+		margin-bottom: 1em;
+	}
+
+	header
+	{
+		margin-bottom: 2em;
+	}
+
+		header h2
+		{
+			font-size: 2.8em;
+		}
+
+		header .byline
+		{
+			display: block;
+			margin: 0.5em 0 0 0;
+			padding: 0.50em 0 0.5em 0;
+			text-transform: uppercase;
+			font-size: 1.4em;
+		}
+
+	footer
+	{
+		margin-top: 1em;
+	}
+
+	br.clear
+	{
+		clear: both;
+	}
+
+	/* Sections/Articles */
+
+		section,
+		article
+		{
+			margin-bottom: 3em;
+		}
+
+		section > :last-child,
+		article > :last-child
+		{
+			margin-bottom: 0;
+		}
+
+		section:last-child,
+		article:last-child
+		{
+			margin-bottom: 0;
+		}
+
+		.row > section,
+		.row > article
+		{
+			margin-bottom: 0;
+		}
+
+	/* Images */
+
+		.image
+		{
+			display: inline-block;
+		}
+
+			.image img
+			{
+				display: block;
+				width: 100%;
+			}
+
+			.image.featured
+			{
+				display: block;
+				width: 100%;
+				margin: 0 0 2em 0;
+			}
+
+			.image.full
+			{
+				display: block;
+				width: 100%;
+				margin-bottom: 2em;
+			}
+
+			.image.left
+			{
+				float: left;
+				margin: 0 2em 2em 0;
+			}
+
+			.image.centered
+			{
+				display: block;
+				margin: 0 0 2em 0;
+			}
+
+				.image.centered img
+				{
+					margin: 0 auto;
+					width: auto;
+				}
+
+	/* Lists */
+
+		ul.default
+		{
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+
+			ul.default li
+			{
+				padding: 0.80em 0em;
+				border-top: 1px solid;
+				border-color: rgba(255,255,255,.2);
+			}
+
+			ul.default li:first-child
+			{
+				padding-top: 0em;
+				border-top: none;
+			}
+
+			ul.default a
+			{
+				color: rgba(255,255,255,.6);
+			}
+
+.list-style1 {
+}
+
+.list-style1 li {
+	padding: 20px 0px 20px 0px;
+	background: image-url("link-style1-divider.png") repeat-x left top;
+}
+
+.list-style1 h2 {
+	margin: 0px;
+	padding: 0px !important;
+	letter-spacing: -1px !important;
+	font-size: 1.2em !important;
+	font-weight: 700;
+}
+
+.list-style1 p {
+	margin: 0px;
+	padding: 0px;
+	line-height: 180%;
+	font-size: 10pt;
+}
+
+.list-style1 img {
+	float: left;
+	margin-right: 20px;
+}
+
+.list-style1 .posted {
+	padding: 10px 0px 0px 0px;
+	font-size: 8pt;
+	font-style: italic;
+	color: #A2A2A2;
+}
+
+.list-style1 .first {
+	padding-top: 0px;
+	background: none;
+}
+
+.list-style1 blockquote {
+	padding: 10px 0px 0px 0px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 9pt;
+	font-style: italic;
+}
+
+/* List style */
+
+.list-style2 {
+}
+
+.list-style2 li {
+	float: left;
+	padding: 5px 5px 0px 5px;
+}
+
+.list-style2 img {
+	padding: 5px;
+	background: #FFFFFF;
+}
+
+	/* Buttons */
+
+		.button
+		{
+			position: relative;
+			display: inline-block;
+			margin-top: 0.5em;
+			padding: 1em 1.5em;
+			background: #c61732;
+			border-radius: 6px;
+			text-decoration: none;
+			text-transform: uppercase;
+			font-size: 1.1em;
+			color: #FFF;
+			-moz-transition: color 0.35s ease-in-out, background-color 0.35s ease-in-out;
+			-webkit-transition: color 0.35s ease-in-out, background-color 0.35s ease-in-out;
+			-o-transition: color 0.35s ease-in-out, background-color 0.35s ease-in-out;
+			-ms-transition: color 0.35s ease-in-out, background-color 0.35s ease-in-out;
+			transition: color 0.35s ease-in-out, background-color 0.35s ease-in-out;
+			cursor: pointer;
+		}
+
+			.button:hover
+			{
+				background: #ad142c;
+				color: #FFF !important;
+			}
+
+			.medium
+			{
+				padding: 1em 2em;
+				font-size: 1.4em;
+			}
+
+/*********************************************************************************/
+/* Icons                                                                         */
+/* Powered by Font Awesome by Dave Gandy | http://fontawesome.io                 */
+/* Licensed under the SIL OFL 1.1 (font), MIT (CSS)                              */
+/*********************************************************************************/
+
+	.fa
+	{
+		text-decoration: none;
+	}
+
+		.fa.solo
+		{
+		}
+
+			.fa.solo span
+			{
+				display: none;
+			}
+
+		.fa:before
+		{
+			display:inline-block;
+			font-family: FontAwesome;
+			font-size: 1.25em;
+			text-decoration: none;
+			font-style: normal;
+			font-weight: normal;
+			line-height: 1;
+			-webkit-font-smoothing:antialiased;
+			-moz-osx-font-smoothing:grayscale;
+		}
+
+		.fa-lg{font-size:1.3333333333333333em;line-height:.75em;vertical-align:-15%}
+		.fa-2x{font-size:2em}
+		.fa-3x{font-size:3em}
+		.fa-4x{font-size:4em}
+		.fa-5x{font-size:5em}
+		.fa-fw{width:1.2857142857142858em;text-align:center}
+		.fa-ul{padding-left:0;margin-left:2.142857142857143em;list-style-type:none}.fa-ul>li{position:relative}
+		.fa-li{position:absolute;left:-2.142857142857143em;width:2.142857142857143em;top:.14285714285714285em;text-align:center}.fa-li.fa-lg{left:-1.8571428571428572em}
+		.fa-border{padding:.2em .25em .15em;border:solid .08em #eee;border-radius:.1em}
+		.pull-right{float:right}
+		.pull-left{float:left}
+		.fa.pull-left{margin-right:.3em}
+		.fa.pull-right{margin-left:.3em}
+		.fa-spin{-webkit-animation:spin 2s infinite linear;-moz-animation:spin 2s infinite linear;-o-animation:spin 2s infinite linear;animation:spin 2s infinite linear}
+		@-moz-keyframes spin{0%{-moz-transform:rotate(0deg)} 100%{-moz-transform:rotate(359deg)}}@-webkit-keyframes spin{0%{-webkit-transform:rotate(0deg)} 100%{-webkit-transform:rotate(359deg)}}@-o-keyframes spin{0%{-o-transform:rotate(0deg)} 100%{-o-transform:rotate(359deg)}}@-ms-keyframes spin{0%{-ms-transform:rotate(0deg)} 100%{-ms-transform:rotate(359deg)}}@keyframes spin{0%{transform:rotate(0deg)} 100%{transform:rotate(359deg)}}.fa-rotate-90{filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=1);-webkit-transform:rotate(90deg);-moz-transform:rotate(90deg);-ms-transform:rotate(90deg);-o-transform:rotate(90deg);transform:rotate(90deg)}
+		.fa-cubes:before{content:"\f1b3"}
+		.fa-magic:before{content:"\f0d0"}
+		.fa-wrench:before{content:"\f0ad"}
+		.fa-chain:before,.fa-link:before{content:"\f0c1"}
+		.fa-briefcase:before{content:"\f0b1"}
+		.fa-stack-1x,.fa-stack-2x{position:absolute;left:0;width:100%;text-align:center}
+		.fa-stack-1x{line-height:inherit}
+		.fa-stack-2x{font-size:2em}
+
+/*********************************************************************************/
+/* Header                                                                        */
+/*********************************************************************************/
+
+	#header-wrapper
+	{
+		padding: 0em;
+		background: #333 image-url("banner.jpg") no-repeat center;
+		background-size: cover;
+	}
+
+	#header
+	{
+		position: relative;
+		text-align: right;
+		color: #fff;
+		background: #FFF;
+	}
+
+		#header .container
+		{
+			position: relative;
+			padding: 10em 0em;
+		}
+
+/*********************************************************************************/
+/* Logo                                                                          */
+/*********************************************************************************/
+
+	#logo
+	{
+		position: absolute;
+		left: 0em;
+		top: 1.7em;
+	}
+
+		#logo h1
+		{
+		}
+
+		#logo a
+		{
+			display: block;
+			text-decoration: none;
+			text-transform: lowercase;
+			font-size: 2.4em;
+			font-weight: 600;
+		}
+
+/*********************************************************************************/
+/* Nav                                                                           */
+/*********************************************************************************/
+
+/*********************************************************************************/
+/* Banner                                                                        */
+/*********************************************************************************/
+
+	#banner
+	{
+		position: relative;
+		text-align: center;
+		color: #fff;
+	}
+
+	#banner .fa
+	{
+	}
+
+		#banner .fa:before
+		{
+			padding-bottom: 0.50em;
+			font-size: 8em;
+		}
+
+	#banner .button
+	{
+	}
+
+		#banner .button:hover
+		{
+		}
+
+/*********************************************************************************/
+/* Main                                                                          */
+/*********************************************************************************/
+
+	#main
+	{
+		position: relative;
+		background: #fff;
+	}
+
+		.homepage #main header,
+		.homepage #main
+		{
+			text-align: center;
+		}
+
+		#main .left
+		{
+			text-align: left;
+		}
+
+		#main .right
+		{
+			text-align: right;
+		}
+
+		#main .button
+		{
+			display: inline-block;
+			margin-top: 1em;
+		}
+
+		#main .divider
+		{
+			margin-top: 4em;
+			border-bottom: 1px solid rgba(0,0,0,.2);
+		}
+
+
+		.sidebar .default li
+		{
+			border-color: rgba(0,0,0,.1);
+		}
+
+		.sidebar .default a
+		{
+			color: #333;
+		}
+
+
+/*********************************************************************************/
+/* Extra                                                                         */
+/*********************************************************************************/
+
+	#extra
+	{
+		position: relative;
+		background: #f5f5f5;
+		text-align: center;
+	}
+
+	#extra header h2
+	{
+		text-transform: uppercase;
+		font-size: 1.6em;
+	}
+
+	#extra .fa
+	{
+	}
+
+		#extra .fa:before
+		{
+			margin-bottom: 1em;
+			width: 2em;
+			height: 2em;
+			line-height: 2em;
+			font-size: 3em;
+			border-radius: 50%;
+			border: 2px solid;
+			border-color: rgba(0,0,0,.8);
+			color: rgba(0,0,0,.8);
+		}
+
+	#extra .button
+	{
+		margin-top: 4em;
+	}
+
+/*********************************************************************************/
+/* Featured                                                                      */
+/*********************************************************************************/
+
+	#featured
+	{
+		position: relative;
+		background: image-url("featured-wrapper-bg.jpg") repeat;
+		text-align: center;
+		color: #FFF;
+	}
+
+	#featured header
+	{
+	}
+
+/*********************************************************************************/
+/* Footer                                                                        */
+/*********************************************************************************/
+
+	#footer
+	{
+		position: relative;
+		background: image-url("footer-content-wrapper-bg.jpg") repeat;
+		color: rgba(255,255,255,.6);
+	}
+
+	#footer header h2
+	{
+		text-transform: uppercase;
+		font-weight: 600;
+		font-size: 1.4em;
+		color: #FFF;
+	}
+
+/*********************************************************************************/
+/* Copyright                                                                     */
+/*********************************************************************************/
+
+	#copyright
+	{
+		position: relative;
+		padding: 3em 0em;
+		text-align: center;
+		color: rgba(255,255,255,.4);
+	}
+
+	#copyright .container
+	{
+	}
+
+	#copyright a
+	{
+		text-decoration: none;
+		color: rgba(255,255,255,.6);
+	}
