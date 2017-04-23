@@ -3,15 +3,67 @@
     templated.co @templatedco
     Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
 */
+/*********************************************************************************/
+/* Icons                                                                         */
+/* Powered by Font Awesome by Dave Gandy | http://fontawesome.io                 */
+/* Licensed under the SIL OFL 1.1 (font), MIT (CSS)                              */
+/*********************************************************************************/
 
+	.fa
+	{
+		text-decoration: none;
+	}
+
+		.fa.solo
+		{
+		}
+
+			.fa.solo span
+			{
+				display: none;
+			}
+
+		.fa:before
+		{
+			display:inline-block;
+			font-family: FontAwesome;
+			font-size: 1.25em;
+			text-decoration: none;
+			font-style: normal;
+			font-weight: normal;
+			line-height: 1;
+			-webkit-font-smoothing:antialiased;
+			-moz-osx-font-smoothing:grayscale;
+		}
+
+		.fa-lg{font-size:1.3333333333333333em;line-height:.75em;vertical-align:-15%}
+		.fa-2x{font-size:2em}
+		.fa-3x{font-size:3em}
+		.fa-4x{font-size:4em}
+		.fa-5x{font-size:5em}
+		.fa-fw{width:1.2857142857142858em;text-align:center}
+		.fa-ul{padding-left:0;margin-left:2.142857142857143em;list-style-type:none}.fa-ul>li{position:relative}
+		.fa-li{position:absolute;left:-2.142857142857143em;width:2.142857142857143em;top:.14285714285714285em;text-align:center}.fa-li.fa-lg{left:-1.8571428571428572em}
+		.fa-border{padding:.2em .25em .15em;border:solid .08em #eee;border-radius:.1em}
+		.pull-right{float:right}
+		.pull-left{float:left}
+		.fa.pull-left{margin-right:.3em}
+		.fa.pull-right{margin-left:.3em}
+		.fa-spin{-webkit-animation:spin 2s infinite linear;-moz-animation:spin 2s infinite linear;-o-animation:spin 2s infinite linear;animation:spin 2s infinite linear}
+		@-moz-keyframes spin{0%{-moz-transform:rotate(0deg)} 100%{-moz-transform:rotate(359deg)}}@-webkit-keyframes spin{0%{-webkit-transform:rotate(0deg)} 100%{-webkit-transform:rotate(359deg)}}@-o-keyframes spin{0%{-o-transform:rotate(0deg)} 100%{-o-transform:rotate(359deg)}}@-ms-keyframes spin{0%{-ms-transform:rotate(0deg)} 100%{-ms-transform:rotate(359deg)}}@keyframes spin{0%{transform:rotate(0deg)} 100%{transform:rotate(359deg)}}.fa-rotate-90{filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=1);-webkit-transform:rotate(90deg);-moz-transform:rotate(90deg);-ms-transform:rotate(90deg);-o-transform:rotate(90deg);transform:rotate(90deg)}
+		.fa-bolt:before{content:"\f1b3"}
+		.fa-magic:before{content:"\f0d0"}
+		.fa-wrench:before{content:"\f0ad"}
+		.fa-chain:before,.fa-link:before{content:"\f0c1"}
+		.fa-briefcase:before{content:"\f0b1"}
+		.fa-stack-1x,.fa-stack-2x{position:absolute;left:0;width:100%;text-align:center}
+		.fa-stack-1x{line-height:inherit}
+		.fa-stack-2x{font-size:2em}
 /*********************************************************************************/
 /* Basic                                                                         */
 /*********************************************************************************/
-
 	body
 	{
-		background: #4e5265
-		 image-url("main-wrapper-bg.jpg") repeat;
 	}
 
 	body,input,textarea,select
@@ -81,7 +133,7 @@
 
 				#extra
 				{
-					padding: 4em 0em;
+					padding: 2em 0em;
 					position: relative;
 					background: #f5f5f5;
 					text-align: center;
@@ -93,13 +145,11 @@
 					font-size: 1.6em;
 				}
 
-				#extra .fa
-				{
-				}
+				#extra .fa {}
 
 					#extra .fa:before
 					{
-						margin-bottom: 1em;
+						margin-bottom: 0em;
 						width: 2em;
 						height: 2em;
 						line-height: 2em;
@@ -110,15 +160,18 @@
 						color: rgba(0,0,0,.8);
 					}
 
-				#extra .button
-				{
-					margin-top: 4em;
+				#extra .w {
+          margin-left: 23%;
+					width: 40em;
 				}
 
-				.u3 {
-          float: left;
+
+				.u4 {
+          padding: 0em 1em 0em 1em;
+					float: left;
 					width: 25%
 				}
+
 
 	/*********************************************************************************/
 	/* Header                                                                        */
@@ -141,9 +194,173 @@
 			#header .container
 			{
 				position: relative;
-				padding: 3em 0em;
+				padding: 2em 0em;
 			}
+			/*********************************************************************************/
+			/* Logo                                                                          */
+			/*********************************************************************************/
 
+				#logo
+				{
+					position: absolute;
+					left: 0em;
+					top: 1.7em;
+				}
+
+					#logo h1
+					{
+					}
+
+					#logo a
+					{
+						display: block;
+						text-decoration: none;
+						text-transform: lowercase;
+						font-size: 2.4em;
+						font-weight: 600;
+					}
+
+
+			/*********************************************************************************/
+			/* Main                                                                          */
+			/*********************************************************************************/
+
+				#main
+				{
+					margin-top: 1em;
+					position: relative;
+					background: #fff;
+				}
+
+					.homepage #main header,
+					.homepage #main
+					{
+						text-align: center;
+					}
+
+					#main .fa {}
+
+						#main .fa:before
+						{
+							width: 1em;
+							height: 1em;
+ 							border-color: #ffffff;
+							color: #ffffff;
+						}
+          #main .container
+					{
+						margin-top:1em;
+					}
+					#main .mybutton
+					{
+						position: relative;
+						display: inline-block;
+						margin-top: 1em;
+						margin-bottom: 2em;
+						background: #4688f1;
+						color:#3aa757;
+						border-radius: 6px;
+					}
+
+					#main .divider
+					{
+						border-bottom: 1px solid rgba(0,0,0,.2);
+						margin-top: 3em;
+          }
+
+					.sidebar .default li
+					{
+						border-color: rgba(0,0,0,.1);
+					}
+
+					.sidebar .default a
+					{
+						color: #333;
+					}
+
+					.u3map {
+						margin: 0em;
+						padding: 0em 2em 0em 2em;
+						float: left;
+						width: 33.3333333333%
+					}
+
+
+
+					/*********************************************************************************/
+					/* Featured                                                                      */
+					/*********************************************************************************/
+
+						#featured
+						{
+							position: relative;
+							background: image-url("featured-wrapper-bg.jpg") repeat;
+							text-align: center;
+							color: #FFF;
+					    padding-top:2em;
+							padding-bottom: 2em;
+						}
+
+						#featured .row
+						{
+							padding: -1em 0em 0em -1em;
+							margin:0em;
+
+						}
+
+						.u6 {
+							padding: 0em 0em 0em 0em;
+							float: left;
+							width: 16.666666666666667%
+						}
+
+
+					/*********************************************************************************/
+					/* Footer                                                                        */
+					/*********************************************************************************/
+
+						#footer
+						{
+							position: relative;
+							background: image-url("footer-content-wrapper-bg.jpg") repeat;
+							color: rgba(255,255,255,.6);
+						}
+
+						#footer header h2
+						{
+							text-transform: uppercase;
+							font-weight: 600;
+							font-size: 1.4em;
+							color: #FFF;
+						}
+						.u3 {
+		          margin: 0em;
+							padding: 0em 2em 3em 4em;
+							float: left;
+							width: 33.3333333333%
+						}
+
+					/*********************************************************************************/
+					/* Copyright                                                                     */
+					/*********************************************************************************/
+
+						#copyright
+						{
+							position: relative;
+							top: -1em;
+							padding: 3em 0em;
+							text-align: center;
+							color: rgba(255,255,255,.4);
+							background: #4e5265 image-url("main-wrapper-bg.jpg") repeat;
+
+						}
+
+
+						#copyright a
+						{
+							text-decoration: none;
+							color: rgba(255,255,255,.6);
+						}
 
 
 
@@ -212,7 +429,12 @@
 		font-style: italic;
 	}
 
-	p, ul, ol, dl, table
+	p
+	{
+		margin-bottom: 0em;
+	}
+
+	ul, ol, dl, table
 	{
 		margin-bottom: 1em;
 	}
@@ -266,11 +488,6 @@
 			margin-bottom: 0;
 		}
 
-		.row > section,
-		.row > article
-		{
-			margin-bottom: 0;
-		}
 
 	/* Images */
 
@@ -344,68 +561,6 @@
 				color: rgba(255,255,255,.6);
 			}
 
-.list-style1 {
-}
-
-.list-style1 li {
-	padding: 20px 0px 20px 0px;
-	background: image-url("link-style1-divider.png") repeat-x left top;
-}
-
-.list-style1 h2 {
-	margin: 0px;
-	padding: 0px !important;
-	letter-spacing: -1px !important;
-	font-size: 1.2em !important;
-	font-weight: 700;
-}
-
-.list-style1 p {
-	margin: 0px;
-	padding: 0px;
-	line-height: 180%;
-	font-size: 10pt;
-}
-
-.list-style1 img {
-	float: left;
-	margin-right: 20px;
-}
-
-.list-style1 .posted {
-	padding: 10px 0px 0px 0px;
-	font-size: 8pt;
-	font-style: italic;
-	color: #A2A2A2;
-}
-
-.list-style1 .first {
-	padding-top: 0px;
-	background: none;
-}
-
-.list-style1 blockquote {
-	padding: 10px 0px 0px 0px;
-	font-family: Georgia, "Times New Roman", Times, serif;
-	font-size: 9pt;
-	font-style: italic;
-}
-
-/* List style */
-
-.list-style2 {
-}
-
-.list-style2 li {
-	float: left;
-	padding: 5px 5px 0px 5px;
-}
-
-.list-style2 img {
-	padding: 5px;
-	background: #FFFFFF;
-}
-
 	/* Buttons */
 
 		.button
@@ -415,7 +570,7 @@
 			margin-top: 0.5em;
 			padding: 1em 1.5em;
 			background: #c61732;
-			border-radius: 6px;
+			border-radius: 0px;
 			text-decoration: none;
 			text-transform: uppercase;
 			font-size: 1.1em;
@@ -439,189 +594,3 @@
 				padding: 1em 2em;
 				font-size: 1.4em;
 			}
-
-/*********************************************************************************/
-/* Icons                                                                         */
-/* Powered by Font Awesome by Dave Gandy | http://fontawesome.io                 */
-/* Licensed under the SIL OFL 1.1 (font), MIT (CSS)                              */
-/*********************************************************************************/
-
-	.fa
-	{
-		text-decoration: none;
-	}
-
-		.fa.solo
-		{
-		}
-
-			.fa.solo span
-			{
-				display: none;
-			}
-
-		.fa:before
-		{
-			display:inline-block;
-			font-family: FontAwesome;
-			font-size: 1.25em;
-			text-decoration: none;
-			font-style: normal;
-			font-weight: normal;
-			line-height: 1;
-			-webkit-font-smoothing:antialiased;
-			-moz-osx-font-smoothing:grayscale;
-		}
-
-		.fa-lg{font-size:1.3333333333333333em;line-height:.75em;vertical-align:-15%}
-		.fa-2x{font-size:2em}
-		.fa-3x{font-size:3em}
-		.fa-4x{font-size:4em}
-		.fa-5x{font-size:5em}
-		.fa-fw{width:1.2857142857142858em;text-align:center}
-		.fa-ul{padding-left:0;margin-left:2.142857142857143em;list-style-type:none}.fa-ul>li{position:relative}
-		.fa-li{position:absolute;left:-2.142857142857143em;width:2.142857142857143em;top:.14285714285714285em;text-align:center}.fa-li.fa-lg{left:-1.8571428571428572em}
-		.fa-border{padding:.2em .25em .15em;border:solid .08em #eee;border-radius:.1em}
-		.pull-right{float:right}
-		.pull-left{float:left}
-		.fa.pull-left{margin-right:.3em}
-		.fa.pull-right{margin-left:.3em}
-		.fa-spin{-webkit-animation:spin 2s infinite linear;-moz-animation:spin 2s infinite linear;-o-animation:spin 2s infinite linear;animation:spin 2s infinite linear}
-		@-moz-keyframes spin{0%{-moz-transform:rotate(0deg)} 100%{-moz-transform:rotate(359deg)}}@-webkit-keyframes spin{0%{-webkit-transform:rotate(0deg)} 100%{-webkit-transform:rotate(359deg)}}@-o-keyframes spin{0%{-o-transform:rotate(0deg)} 100%{-o-transform:rotate(359deg)}}@-ms-keyframes spin{0%{-ms-transform:rotate(0deg)} 100%{-ms-transform:rotate(359deg)}}@keyframes spin{0%{transform:rotate(0deg)} 100%{transform:rotate(359deg)}}.fa-rotate-90{filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=1);-webkit-transform:rotate(90deg);-moz-transform:rotate(90deg);-ms-transform:rotate(90deg);-o-transform:rotate(90deg);transform:rotate(90deg)}
-		.fa-bolt:before{content:"\f1b3"}
-		.fa-magic:before{content:"\f0d0"}
-		.fa-wrench:before{content:"\f0ad"}
-		.fa-chain:before,.fa-link:before{content:"\f0c1"}
-		.fa-briefcase:before{content:"\f0b1"}
-		.fa-stack-1x,.fa-stack-2x{position:absolute;left:0;width:100%;text-align:center}
-		.fa-stack-1x{line-height:inherit}
-		.fa-stack-2x{font-size:2em}
-
-/*********************************************************************************/
-/* Logo                                                                          */
-/*********************************************************************************/
-
-	#logo
-	{
-		position: absolute;
-		left: 0em;
-		top: 1.7em;
-	}
-
-		#logo h1
-		{
-		}
-
-		#logo a
-		{
-			display: block;
-			text-decoration: none;
-			text-transform: lowercase;
-			font-size: 2.4em;
-			font-weight: 600;
-		}
-
-
-/*********************************************************************************/
-/* Main                                                                          */
-/*********************************************************************************/
-
-	#main
-	{
-		position: relative;
-		background: #fff;
-	}
-
-		.homepage #main header,
-		.homepage #main
-		{
-			text-align: center;
-		}
-
-		#main .left
-		{
-			text-align: left;
-		}
-
-		#main .right
-		{
-			text-align: right;
-		}
-
-		#main .button
-		{
-			display: inline-block;
-			margin-top: 1em;
-		}
-
-		#main .divider
-		{
-			margin-top: 4em;
-			border-bottom: 1px solid rgba(0,0,0,.2);
-		}
-
-
-		.sidebar .default li
-		{
-			border-color: rgba(0,0,0,.1);
-		}
-
-		.sidebar .default a
-		{
-			color: #333;
-		}
-
-
-/*********************************************************************************/
-/* Featured                                                                      */
-/*********************************************************************************/
-
-	#featured
-	{
-		position: relative;
-		background: image-url("featured-wrapper-bg.jpg") repeat;
-		text-align: center;
-		color: #FFF;
-	}
-
-	#featured header
-	{
-	}
-
-/*********************************************************************************/
-/* Footer                                                                        */
-/*********************************************************************************/
-
-	#footer
-	{
-		position: relative;
-		background: image-url("footer-content-wrapper-bg.jpg") repeat;
-		color: rgba(255,255,255,.6);
-	}
-
-	#footer header h2
-	{
-		text-transform: uppercase;
-		font-weight: 600;
-		font-size: 1.4em;
-		color: #FFF;
-	}
-
-/*********************************************************************************/
-/* Copyright                                                                     */
-/*********************************************************************************/
-
-	#copyright
-	{
-		position: relative;
-		padding: 3em 0em;
-		text-align: center;
-		color: rgba(255,255,255,.4);
-	}
-
-
-	#copyright a
-	{
-		text-decoration: none;
-		color: rgba(255,255,255,.6);
-	}

@@ -6,13 +6,20 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <style>
+    </style>
+
   </head>
 
   <body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+      <i class="fa fa-eject" aria-hidden="true"></i>
+      <p>Top</p>
+    </button>
     <div class="container-fluid">
       <div class="row">
         <%= render "common/navbar" %>
-        <%= render "common/flashes" %>
+        <!--%= render "common/flashes" %-->
         <%= yield %>
       </div>
     </div>

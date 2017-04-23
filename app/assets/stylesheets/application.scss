@@ -20,16 +20,18 @@
  @import "font-awesome";
  @import url(http://fonts.googleapis.com/css?family=Roboto);
 
+
+
 .navbar-default {
    background-color: default ;
    border-color: default ;
-   margin-bottom: 0;
-
+   margin-bottom: 0em;
+   padding-bottom: -1em;
 }
 
 @media (min-width: 768px) {
   .navbar {
-     border-radius: 0;
+     border-radius: 0px;
   }
 }
 
@@ -38,7 +40,7 @@
     width: 0; /* 0 width - change this with JavaScript */
     position: fixed; /* Stay in place */
     z-index: 1; /* Stay on top */
-    top: 0;
+    top: 0px;
     right: 0;
     background-color: #50abb0;
     overflow-x: hidden; /* Disable horizontal scroll */
@@ -74,7 +76,13 @@
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
     transition: margin-left .5s;
-    padding: 20px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-top: 0px ;
+    margin-bottom: -10px;
+
+    border-radius: 0px;
+
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
@@ -194,21 +202,20 @@
   font-size: 12px;
 }
 
-
 /*___________________向上按钮________________________ */
 #myBtn {
     display: none; /* Hidden by default */
     position: fixed; /* Fixed/sticky position */
-    bottom: 20px; /* Place the button at the bottom of the page */
-    right: 30px; /* Place the button 30px from the right */
+    bottom: 25px; /* Place the button at the bottom of the page */
+    right: 25px; /* Place the button 30px from the right */
     z-index: 99; /* Make sure it does not overlap */
     border: none; /* Remove borders */
     outline: none; /* Remove outline */
-    background-color: red; /* Set a background color */
+    background-color: #c61732; /* Set a background color */
     color: white; /* Text color */
     cursor: pointer; /* Add a mouse pointer on hover */
-    padding: 15px; /* Some padding */
-    border-radius: 10px; /* Rounded corners */
+    padding: 5px 0px 0px 0px; /* Some padding */
+    border-radius: 0px; /* Rounded corners */
 }
 
 #myBtn:hover {
